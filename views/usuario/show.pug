@@ -1,0 +1,27 @@
+extends index
+
+block userContent
+    .container-fluid.p-5
+        h1.text-center Mostrar Usuarios 
+    table.table.table-striped.mt-4
+        thead
+            tr
+                th ID
+                th Nombre
+                th Apellido
+                th Correo
+                th Telefono
+                th Contraseña
+                th Tipo Perfil 
+        tbody
+          each usuario in usuarios
+            tr
+                td #{usuario.id}
+                td #{usuario.nombre}
+                td #{usuario.apellido}
+                td #{usuario.correo} 
+                td #{usuario.telefono}
+                td #{usuario.contrasena}
+                td #{usuario.rol}
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js")

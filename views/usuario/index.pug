@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+        div.navbar-nav.w-100.d-flex.justify-content-around.flex-lg-row.flex-column
+            a.nav-link(href="/usuario/") Mostrar Usuarios
+        
+            a.nav-link(href="/usuario/add") Añadir Usuario 
+        
+            a.nav-link(href="/usuario/consult") Consultar Usuario
+        
+            a.nav-link(href="/usuario/edit") Editar Usuario
+        
+            a.nav-link(href="/usuario/delete") Eliminar Usuario 
+    block userContent
